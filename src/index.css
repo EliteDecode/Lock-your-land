@@ -1,13 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.styled-border {
+  border-right: 1px dotted gray;
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .styled-border,
+  .styled {
+    border: 1px solid rgba(128, 128, 128, 0.344);
+    margin: 3% 0%;
+    border-radius: 3%;
+  }
+}
+
+.aboutlockbg {
+  background: rgb(30, 64, 175);
+  background: linear-gradient(
+    0deg,
+    rgba(30, 64, 175, 0.4290091036414566) 43%,
+    rgba(34, 197, 94, 0.06206232492997199) 86%
+  );
+}
+
+.styled-img {
+  width: 80%;
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .styled-img {
+    width: 100%;
+  }
+  .styled-p {
+    width: 100% !important;
+    margin: 0% 0% !important;
+  }
+}
+
+.rec-arrow,
+.rec-dot {
+  display: none;
+}
+
+.MuiListItem-padding {
+  padding: 0%;
+}
+
+.banner {
+  background-image: url("assets/banner.png");
+  background-repeat: no-repeat;
+  background-position: 635px 30px;
+  width: 100%;
+}
+
+.styled-p {
+  width: 50%;
+  margin: 0% auto;
+}
+
+.findlandBanner {
+  background-image: url("assets/banner6.png");
+  background-position: 190px 170px;
+  background-repeat: no-repeat;
+}
+@media (min-width: 0px) and (max-width: 575px) {
+  .findlandBanner {
+    background-image: url("assets/banner6.png");
+    background-position: -140px 220px !important;
+    background-repeat: no-repeat;
+  }
+}
+
+.bg-green-custom {
+  background-color: #f6fbf4b8;
 }
