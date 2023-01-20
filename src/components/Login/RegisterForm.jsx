@@ -51,7 +51,7 @@ const RegisterForm = () => {
                 autoComplete="off"
               >
                 <Grid container spacing={2}>
-                  <Grid item xs={12} sm={6} md={4}>
+                  <Grid item xs={12} sm={6} md={6}>
                     <div>
                       <TextField
                         label="First Name"
@@ -61,7 +61,7 @@ const RegisterForm = () => {
                       />
                     </div>
                   </Grid>
-                  <Grid item xs={12} sm={6} md={4}>
+                  <Grid item xs={12} sm={6} md={6}>
                     <div>
                       <TextField
                         label="Last Name or Surname"

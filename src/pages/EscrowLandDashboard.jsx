@@ -10,6 +10,7 @@ const EscrowLand = () => {
         Title="Secure Land"
         bg="bg-blue-100"
         border="border-blue-100"
+        target="/escrowLandForm"
       />
     </>
   );

@@ -13,6 +13,10 @@ import BuyLandDashboard from "./pages/BuyLandDashboard";
 import SellLandDashboard from "./pages/SellLandDashboard";
 import EscrowLandDashboard from "./pages/EscrowLandDashboard";
 import BuyLandLists from "./pages/BuyLandLists";
+import SellLandForm from "./components/buy,sell,escrow/sellLandForm/SellLandForm";
+import EscrowLandForm from "./components/buy,sell,escrow/escrowLandForm/EscrowLandForm";
+import LandsForEscrow from "./pages/LandsForEscrow";
+import LandForSale from "./pages/LandsForSale";
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
@@ -29,6 +33,10 @@ root.render(
           <Route exact path="/sellLand" element={<SellLandDashboard />} />
           <Route exact path="/escrowLand" element={<EscrowLandDashboard />} />
           <Route exact path="/buyLandLists" element={<BuyLandLists />} />
+          <Route exact path="/sellLandForm" element={<SellLandForm />} />
+          <Route exact path="/landForSale" element={<LandForSale />} />
+          <Route exact path="/escrowLandForm" element={<EscrowLandForm />} />
+          <Route exact path="/landForEscrow" element={<LandsForEscrow />} />
         </Routes>
       </Provider>
     </BrowserRouter>

@@ -169,17 +169,13 @@ export default function DashboardNavbar() {
                 anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
               >
                 <MenuItem>
-                  {" "}
-                  <Avatar />
-                  Buy Land
+                  <Link to="/buyLand">Buy Land</Link>
                 </MenuItem>
                 <MenuItem>
-                  <Avatar />
-                  Sell Land
+                  <Link to="/sellLand">Sell Land</Link>
                 </MenuItem>
                 <MenuItem>
-                  <Avatar />
-                  Escrow Land
+                  <Link to="/escrowLand">Escrow Land</Link>
                 </MenuItem>
                 <Divider />
 
@@ -194,12 +190,6 @@ export default function DashboardNavbar() {
                     <Logout fontSize="small" />
                   </ListItemIcon>
                   <Link to="/login">Logout</Link>
-                </MenuItem>
-                <MenuItem>
-                  <ListItemIcon>
-                    <Logout fontSize="small" />
-                  </ListItemIcon>
-                  <Link to="/register">Sign Up</Link>
                 </MenuItem>
               </Menu>
             </Toolbar>

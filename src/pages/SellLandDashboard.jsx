@@ -10,6 +10,7 @@ const SellLand = () => {
         Title="Sell Land"
         bg="bg-gray-100"
         border="border-red-100"
+        target="/sellLandForm"
       />
     </>
   );
