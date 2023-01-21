@@ -46,7 +46,7 @@ const SellLandForm = () => {
                   </Typography>
                   {firstForm && (
                     <>
-                      <Box className="mb-5 mt-10">
+                      <Box className="mb-5 mt-5">
                         <ProgressBar
                           completed={60}
                           bgColor="#15803d"
@@ -63,11 +63,11 @@ const SellLandForm = () => {
                         noValidate
                         autoComplete="off"
                       >
-                        <Grid container spacing={2}>
+                        <Grid container spacing={1}>
                           <Grid item xs={12} sm={6} md={6}>
                             <div>
                               <TextField
-                                label="First Name"
+                                label="Land Owner's First Name"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
@@ -77,7 +77,7 @@ const SellLandForm = () => {
                           <Grid item xs={12} sm={6} md={6}>
                             <div>
                               <TextField
-                                label="Last Name or Surname"
+                                label="Land Owner's Surname"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
@@ -87,7 +87,7 @@ const SellLandForm = () => {
                           <Grid item xs={12} sm={12} md={12}>
                             <div>
                               <TextField
-                                label="Last Name or Surname"
+                                label="Address of Land"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
@@ -97,7 +97,7 @@ const SellLandForm = () => {
                           <Grid item xs={12} sm={6} md={6}>
                             <div>
                               <TextField
-                                label="Email Address"
+                                label="Price of Land"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
@@ -108,7 +108,7 @@ const SellLandForm = () => {
                           <Grid item xs={12} sm={6} md={6}>
                             <div>
                               <TextField
-                                label="Password"
+                                label="State"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
@@ -118,7 +118,7 @@ const SellLandForm = () => {
                           <Grid item xs={12} sm={12} md={12}>
                             <div>
                               <TextField
-                                label="Last Name or Surname"
+                                label="Country"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
@@ -128,7 +128,7 @@ const SellLandForm = () => {
                           <Grid item xs={12} sm={12} md={12}>
                             <div>
                               <TextField
-                                label="Last Name or Surname"
+                                label="Size of Land"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
@@ -138,7 +138,7 @@ const SellLandForm = () => {
                           <Grid item xs={12} sm={6} md={6}>
                             <div>
                               <TextField
-                                label="Retype Password"
+                                label="Escrow Ammount"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
@@ -148,7 +148,17 @@ const SellLandForm = () => {
                           <Grid item xs={12} sm={6} md={6}>
                             <div>
                               <TextField
-                                label="Retype Password"
+                                label="NIN"
+                                id="outlined-size-small"
+                                size="small"
+                                inputProps={{ style: { fontSize: 16 } }}
+                              />
+                            </div>
+                          </Grid>
+                          <Grid item xs={12} sm={12} md={12}>
+                            <div>
+                              <TextField
+                                label="Guarantor's Full Name"
                                 id="outlined-size-small"
                                 size="small"
                                 inputProps={{ style: { fontSize: 16 } }}
